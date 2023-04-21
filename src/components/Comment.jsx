@@ -15,7 +15,7 @@ function Comment() {
       <button
         onClick={() => {
           console.log(comment);
-          fetch("/URL", { method: "POST", body: comment });
+          fetch("/api/comment/new", { method: "POST", body: comment });
         }}
       >
         댓글전송
