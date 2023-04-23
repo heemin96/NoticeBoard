@@ -14,8 +14,9 @@ async function page(props) {
       <h4>상세페이지</h4>
       <h4>{result.title}</h4>
       <p>{result.content}</p>
+      <p>{result._id.toString()}</p>
 
-      <Comment />
+      <Comment id={result._id.toString()} author={result.author} />
     </div>
   );
 }

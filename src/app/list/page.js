@@ -9,7 +9,7 @@ export default async function List() {
   const result = await db.collection("post").find().toArray();
 
   const plainObject = JSON.parse(JSON.stringify(result));
-  console.log(plainObject);
+  // console.log(plainObject);
 
   return (
     <div className="list-bg">
